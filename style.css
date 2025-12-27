@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Form Container */
+.form-container {
+    padding: 40px;
+}
+
+.form-container h2 {
+    color: #1a2980;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #26d0ce;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+}
+
+.form-group label i {
+    margin-right: 10px;
+    color: #26d0ce;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #26d0ce;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 208, 206, 0.2);
+}
+
+.help-text {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(26, 41, 128, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.submit-btn i {
+    margin-right: 10px;
+}
+
+/* Message Area */
+.message-area {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-area.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.message-area.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.message-area.warning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.success-box, .warning-box, .error-box {
+    padding: 15px;
+}
+
+.success-box h3, .warning-box h3, .error-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.success-box h3 i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.warning-box h3 i {
+    color: #ffc107;
+    margin-right: 10px;
+}
+
+.error-box h3 i {
+    color: #dc3545;
+    margin-right: 10px;
+}
+
+/* Info Box */
+.info-box {
+    margin-top: 40px;
+    padding: 25px;
+    background: #e9f7fe;
+    border-radius: 10px;
+    border-left: 5px solid #26d0ce;
+}
+
+.info-box h3 {
+    color: #1a2980;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-box h3 i {
+    margin-right: 10px;
+    color: #26d0ce;
+}
+
+.info-box ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-box li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.contact-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #b3e5fc;
+    color: #0277bd;
+}
+
+.contact-info a {
+    color: #1a2980;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.stats {
+    font-weight: bold;
+    color: #1a2980;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        border-radius: 10px;
+    }
+    
+    .header {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+}
